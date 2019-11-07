@@ -1,0 +1,53 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    background: url('./img/mexico.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    opacity: .8;
+    transition: all .5s linear;
+}
+
+.hidden {
+    display: none;
+}
+
+.visuallyhidden {
+    opacity: 0;
+}
+
+header h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    padding: 10px;
+    border: white 3px solid;
+    background-color: rgba(0, 0, 0, .4);
+    box-shadow: whitesmoke;
+}
+
+header h1:hover {
+    opacity: 1;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+section {
+    display: grid;
+    position: fixed;
+    z-index: -1;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 100vh;
+}
