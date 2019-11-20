@@ -37,7 +37,7 @@ header h1 {
     border: white 3px solid;
     background-color: rgba(0, 0, 0, .4);
     box-shadow: whitesmoke;
-    font-family: 'helvetica neue';
+    font-family: 'Pacifico', cursive;
 }
 
 header h1:hover {
@@ -114,5 +114,5 @@ section .panel div p {
     border: white 3px solid;
     background-color: rgba(0, 0, 0, 0);
     box-shadow: whitesmoke;
-    font-family: 'helvetica neue';
+    font-family: 'Pacifico', cursive;
 }
