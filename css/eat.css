@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #EAE2B7;
+}
+
+.container {
+    position: relative;
+    top: 100px;
+    width: 450px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.container nav div {
+    position: relative;
+    top: auto;
+    float: left;
+    width: 130px;
+    height: 80px;
+    margin: 10px;
+    font-size: 20px;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    color: #003049;
+    border-radius: 25%;
+}
+
+.container .clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.container nav .option1 {
+    background-color: #D62828;
+}
+
+.container nav .option2 {
+    background-color: #F77F00;
+}
+
+.container nav .option3 {
+    background-color: #FCBF49;
+}
+
+.container nav div:hover {
+    top: -10px;
+    cursor: pointer;
+}
+
+.container .menu .page {
+    display: none;
+    width: 450px;
+    height: 600px;
+    position: absolute;
+    top: 50px;
+    z-index: 1;
+}
+
+.container .menu div h2 {
+    padding-top: 20px;
+    font-size: 30px;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    color: #003049;
+}
+
+.container .menu .page .offer h3 {
+    padding-left: 15px;
+    font-size: 20px;
+    font-family: 'Pacifico', cursive;
+    color: #003049;
+}
+
+.container .menu .page .offer p {
+    padding-left: 15px;
+    color: #003049;
+    font-size: 15px;
+    font-family: 'helvetica neue';
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.container .menu .main-courses * {
+    background-color: #D62828;
+}
+
+.container .menu .desserts * {
+    background-color: #F77F00;
+}
+
+.container .menu .drinks * {
+    background-color: #FCBF49;
+}
+
+.container .menu .active {
+    display: block;
+}
