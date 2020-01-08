@@ -1,7 +1,61 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: #EAE2B7;
+    background-color: #EF233C;
+}
+
+nav.options ul {
+    width: 400px;
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav.options ul:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+nav.options ul li {
+    float: left;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Amatic SC', cursive;
+    transition: .5s all;
+}
+
+nav.options ul>li>a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-align: center;
+    color: #003459;
+    background-color: #8D99AE;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+nav.options ul li:hover a {
+    font-weight: bold;
+}
+
+nav.options ul .option1:hover a {
+    background-color: #F7D629;
+}
+
+nav.options ul .option2:hover a {
+    background-color: #43BDC0;
+}
+
+nav.options ul .option3:hover a {
+    background-color: #F16A2A;
+}
+
+nav.options ul .option4:hover a {
+    background-color: #E4599C;
 }
 
 .container {
@@ -15,15 +69,17 @@
 .container nav div {
     position: relative;
     top: auto;
+    left: 5%;
     float: left;
     width: 130px;
     height: 80px;
-    margin: 10px;
+    margin: 5px;
     font-size: 20px;
-    font-family: 'Pacifico', cursive;
+    font-family: 'Amatic SC', cursive;
     text-align: center;
     color: #003049;
     border-radius: 25%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .container .clearfix::after {
@@ -32,16 +88,9 @@
     clear: both;
 }
 
-.container nav .option1 {
-    background-color: #D62828;
-}
-
-.container nav .option2 {
-    background-color: #F77F00;
-}
-
-.container nav .option3 {
-    background-color: #FCBF49;
+.container nav div {
+    background-color: #EDF2F4;
+    font-weight: bold;
 }
 
 .container nav div:hover {
@@ -51,25 +100,33 @@
 
 .container .menu .page {
     display: none;
-    width: 450px;
+    width: 470px;
     height: 600px;
     position: absolute;
     top: 50px;
     z-index: 1;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.container .menu .page * {
+    background-color: #EDF2F4;
 }
 
 .container .menu div h2 {
     padding-top: 20px;
-    font-size: 30px;
-    font-family: 'Pacifico', cursive;
+    font-size: 35px;
+    font-family: 'Amatic SC', cursive;
     text-align: center;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
     color: #003049;
 }
 
 .container .menu .page .offer h3 {
     padding-left: 15px;
-    font-size: 20px;
-    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+    font-family: 'Amatic SC', cursive;
     color: #003049;
 }
 
@@ -77,22 +134,14 @@
     padding-left: 15px;
     color: #003049;
     font-size: 15px;
-    font-family: 'helvetica neue';
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
     padding-bottom: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
-.container .menu .main-courses * {
-    background-color: #D62828;
-}
-
-.container .menu .desserts * {
-    background-color: #F77F00;
-}
-
-.container .menu .drinks * {
-    background-color: #FCBF49;
-}
 
 .container .menu .active {
     display: block;

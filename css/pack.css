@@ -4,13 +4,70 @@
     background-color: #EC9F05;
 }
 
+nav ul {
+    width: 400px;
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav ul:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+nav ul li {
+    float: left;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Amatic SC', cursive;
+    transition: .5s all;
+}
+
+nav ul>li>a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-align: center;
+    color: #003459;
+    background-color: #8D99AE;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+nav ul li:hover a {
+    font-weight: bold;
+}
+
+nav ul .option1:hover a {
+    background-color: #F7D629;
+}
+
+nav ul .option2:hover a {
+    background-color: #43BDC0;
+}
+
+nav ul .option3:hover a {
+    background-color: #E12229;
+}
+
+nav ul .option4:hover a {
+    background-color: #E4599C;
+}
+
 .container {
+    position: relative;
+    top: 100px;
+    margin: 0 auto;
     width: 600px;
     height: 650px;
-    top: 100px;
-    left: 50%;
-    transform: translate(-50%, auto);
     background-color: #8EA604;
+    margin-bottom: 30px;
+    border-radius: 25px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .container h1 {
@@ -21,6 +78,8 @@
     font-weight: bold;
     color: rgb(0, 0, 0);
     background-color: #8EA604;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
 }
 
 .container label {

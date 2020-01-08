@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #B5838D;
+}
+
+.options ul {
+    width: 400px;
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+}
+
+.options ul:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+.options ul li {
+    float: left;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Amatic SC', cursive;
+    transition: .5s all;
+}
+
+.options ul>li>a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-align: center;
+    color: #003459;
+    background-color: #8D99AE;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.options ul li:hover a {
+    font-weight: bold;
+}
+
+.options ul .option1:hover a {
+    background-color: #F7D629;
+}
+
+.options ul .option2:hover a {
+    background-color: #43BDC0;
+}
+
+.options ul .option3:hover a {
+    background-color: #F16A2A;
+}
+
+.options ul .option4:hover a {
+    background-color: #E12229;
+}
+
+.covermin1,
+.cover1 {
+    background-image: url('../img/cover1.jpg');
+}
+
+.covermin2,
+.cover2 {
+    background-image: url('../img/cover2.jpg');
+}
+
+.covermin3,
+.cover3 {
+    background-image: url('../img/cover3.jpg');
+}
+
+.covermin4,
+.cover4 {
+    background-image: url('../img/cover4.jpg');
+}
+
+.covermin5,
+.cover5 {
+    background-image: url('../img/cover5.jpg');
+}
+
+.covermin6,
+.cover6 {
+    background-image: url('../img/cover6.jpg');
+}
+
+.covermin7,
+.cover7 {
+    background-image: url('../img/cover7.jpg');
+}
+
+.covermin8,
+.cover8 {
+    background-image: url('../img/cover8.jpg');
+}
+
+.covermin9,
+.cover9 {
+    background-image: url('../img/cover9.jpg');
+}
+
+.covermin10,
+.cover10 {
+    background-image: url('../img/cover10.jpg');
+}
+
+.popup {
+    display: none;
+}
+
+.popup.active {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.popup.active .movie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    background-color: #B5838D;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 10px;
+}
+
+.movie-cover {
+    width: 300px;
+    height: 400px;
+    margin: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.movie img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(20%, -30%);
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    border-radius: 10px;
+}
+
+.description {
+    display: inline-block;
+    height: fit-content;
+    background-color: #B5838D;
+    border-radius: 10px;
+}
+
+.description h2 {
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    color: #003459;
+    background-color: #B5838D;
+
+}
+
+.description p {
+    height: fit-content;
+    margin: 20px;
+    font-size: 15px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #003459;
+    background-color: #B5838D;
+}
+
+.content header {
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    color: #003459;
+    text-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.movies {
+    display: grid;
+    max-width: 100vw;
+    height: 100%;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.movie-covermin {
+    width: 150px;
+    height: 200px;
+    margin: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    opacity: .7;
+    border-radius: 5px;
+    background-blend-mode: darken;
+    transition: .5s all;
+}
+
+.movie-covermin:hover {
+    opacity: 1;
+    background-blend-mode: normal;
+    cursor: pointer;
+}

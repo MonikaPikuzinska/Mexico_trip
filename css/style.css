@@ -2,117 +2,86 @@ body,
 html {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    background-color: #F7D629;
 }
 
 header {
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-    top: auto;
-    background-color: #000;
-    background: url('../img/mexico.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-blend-mode: darken;
-    transition: all .5s linear;
-}
-
-.hidden {
-    display: none;
-}
-
-.visuallyhidden {
-    opacity: 0;
-}
-
-header h1 {
     position: absolute;
-    top: 50%;
+    top: 43%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 60%;
+    background-color: #000;
+    background: url('../img/mexico.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: .8;
+}
+
+
+h1 {
+    position: absolute;
+    top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: rgb(255, 255, 255);
-    font-size: 50px;
+    color: rgb(32, 32, 32);
+    font-size: 80px;
     padding: 10px;
-    border: white 3px solid;
-    background-color: rgba(0, 0, 0, .4);
     box-shadow: whitesmoke;
-    font-family: 'Pacifico', cursive;
+    font-family: 'Amatic SC', cursive;
 }
 
-header h1:hover {
-    opacity: 1;
-    cursor: pointer;
-    background-color: rgba(0, 0, 0, .6);
+nav ul {
+    width: 400px;
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
 }
 
-section .panel:hover div p {
-    opacity: 1;
-    background-color: rgba(0, 0, 0, .6);
+/* naprawa wysokości elementu - ol */
+nav ul:after {
+    content: '';
+    display: block;
+    clear: both;
 }
 
-section .panel:hover {
-    transform: scale(1.2);
+
+nav ul li {
+    float: left;
+    text-decoration: none;
+    color: rgb(32, 32, 32);
+    font-size: 30px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    font-family: 'Amatic SC', cursive;
+    transition: .4s all;
 }
 
-section .panel div:hover p {
-    cursor: pointer;
-}
-
-section {
-    min-height: 100vh;
-    overflow: hidden;
-    display: flex;
-    z-index: -1;
-    opacity: 1;
-}
-
-section .panel {
-    color: white;
+nav ul>li>a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
     text-align: center;
-    align-items: center;
-    font-size: 20px;
-    background-size: cover;
-    background-position: center;
-    flex: 1;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    transition: .3s ease;
 }
 
-.panel1 {
-    background-image: url("../img/visit.jpg");
+nav ul li:hover {
+    color: #000;
+    font-weight: bold;
 }
 
-.panel2 {
-    background-image: url("../img/eat.jpg");
+nav ul .option1:hover {
+    background-color: #43BDC0;
 }
 
-.panel3 {
-    background-image: url("../img/pack.jpg");
+nav ul .option2:hover {
+    background-color: #F16A2A;
 }
 
-.panel4 {
-    background-image: url("../img/read.jpg");
+nav ul .option3:hover {
+    background-color: #E12229;
 }
 
-section .panel>* {
-    margin: 0;
-    width: 100%;
-    transition: transform 0.5s;
-    flex: 1 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-section .panel div p {
-    color: rgb(255, 255, 255);
-    font-size: 50px;
-    padding: 10px;
-    border: white 3px solid;
-    background-color: rgba(0, 0, 0, 0);
-    box-shadow: whitesmoke;
-    font-family: 'Pacifico', cursive;
+nav ul .option4:hover {
+    background-color: #E4599C;
 }
